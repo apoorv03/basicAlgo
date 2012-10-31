@@ -17,8 +17,8 @@ public class Trees {
 		temp1.rightNode.score = 15;
 		temp1.leftNode.rightNode = new Node();
 		temp1.leftNode.rightNode.score = 7;
-//		temp1.leftNode.leftNode = new Node();
-//		temp1.leftNode.leftNode.score = 3;
+		temp1.leftNode.leftNode = new Node();
+		temp1.leftNode.leftNode.score = 3;
 		run(temp1);
 	}
 
