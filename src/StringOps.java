@@ -13,7 +13,7 @@ public class StringOps {
 	private static void parse2(String temp2) {
 		StringTokenizer t1 = new StringTokenizer(temp2,",;");
 		while(t1.hasMoreTokens()){
-			System.out.println(t1.nextToken());
+			System.out.println(t1.nextToken() + " - " + t1.nextToken());
 		}
 		
 		System.out.println(temp2);
