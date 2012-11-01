@@ -1,10 +1,17 @@
+import java.io.BufferedReader;
+import java.io.DataInputStream;
+import java.io.FileInputStream;
+import java.io.FileNotFoundException;
+import java.io.InputStreamReader;
+
 
 public class SlidingSum {
 
 	/**
 	 * @param args
+	 * @throws FileNotFoundException 
 	 */
-	public static void main(String[] args) {
+	public static void main(String[] args) throws FileNotFoundException {
 //		#include<iostream>
 //		#include<algorithm>
 //		using namespace std;
@@ -27,7 +34,10 @@ public class SlidingSum {
 //			cout<<max(maxy[0], maxy[1]);
 //			return 0;
 //		}
-
+		
+		FileInputStream a = new FileInputStream("s.txt");
+		DataInputStream a2 = new DataInputStream(a);
+		BufferedReader a3 = new BufferedReader(new InputStreamReader(a2));
 	}
 
 }

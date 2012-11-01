@@ -9,10 +9,10 @@ public class perm {
 		// System.out.println(number.length());
 		Vector<String> combs = permute(number);
 		System.out.print("Apoorv - ");
-		for (int i=0;i<combs.size();i++) {
+		for (int i = 0; i < combs.size(); i++) {
 			System.out.print(combs.get(i) + ", ");
 		}
-System.out.println();
+		System.out.println();
 		System.out.print("Shivam - [");
 		perm1("", number);
 	}
@@ -32,9 +32,8 @@ System.out.println();
 		for (int i = 0; i < recursiveResult.size(); i++) {
 			child = recursiveResult.get(i);
 			for (int j = 0; j <= child.length(); j++) {
-				result.add(child.substring(0, j) + 
-						number2.substring(0, 1) + 
-						child.substring(j));
+				result.add(child.substring(0, j) + number2.substring(0, 1)
+						+ child.substring(j));
 			}
 		}
 
